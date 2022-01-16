@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 30px;
+}
+
+.menu {
+    /* width: 25%; */
+    width:310px;
+    float: left;
+    background-color: pink;
+}
+
+.main {
+    /* width: 75%; */
+    width: 100px;
+    float: left;
+    background-color: orange;
+}
+
+/* @media 
+screen and (min-width: 500px) and (max-width: 800px),
+screen and (min-width: 1000px)
+{
+    .menu {
+      background-color: lightblue;
+      font-size: 12px;
+    }
+} */
+
+@media (min-width: 300px){
+    body{
+        background-color: blue;
+    }
+}
+
+@media (min-width: 1000px){
+    body{
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+
+
+
+
