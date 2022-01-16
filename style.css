@@ -7,21 +7,42 @@
 
 body{
     font-size: 30px;
-}
 
-.menu {
-    /* width: 25%; */
-    width:310px;
-    float: left;
-    background-color: pink;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main {
-    /* width: 75%; */
-    width: 100px;
-    float: left;
+    margin: 0 20px 0 20px;
+    width: 600px;
+    height: 200px;
     background-color: orange;
 }
+
+.right{
+    margin: 0 20px 0 20px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+/* .menu {
+    width: 25%;
+    /* width:310px; 
+    height: 100px;
+    float: left;
+    background-color: pink;
+} */
+
+
+/*
+    CSS media queries:
+    https://torquemag.io/2021/08/media-queries-guide/ 
+
+    @media [media-type] ([media-feature]) {
+        // custom CSS
+    }
+*/
 
 /* @media 
 screen and (min-width: 500px) and (max-width: 800px),
@@ -33,16 +54,40 @@ screen and (min-width: 1000px)
     }
 } */
 
-@media (min-width: 300px){
+/* min-width = starting at */
+/* @media (min-width: 300px){
     body{
         background-color: blue;
     }
-}
-
+} */
+/* 
 @media (min-width: 1000px){
     body{
         background-color: rgb(255, 0, 0);
     }
+} */
+
+/* maxwidth = max effective width of rules, then stop */
+@media (max-width: 700px){
+
+    body{
+        font-size: 30px;
+    
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main{
+        width: 100%;
+        background-color: blue;
+    }
+    
+    /* .menu
+    {
+        width: 200px;
+        background-color: pink;
+    } */
+    
 }
 
 
